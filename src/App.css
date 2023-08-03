@@ -24,3 +24,7 @@ p {
   font-size: 0.7rem;
   margin: 0;
 }
+
+.input-container {
+  display: grid;
+}

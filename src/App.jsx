@@ -42,14 +42,16 @@ function App() {
           day: "numeric",
         })}
       </p>
-      <label htmlFor="dolares"></label>
-      <input
-        type="text"
-        name="dolares"
-        min="0"
-        inputmode="decimal"
-        onChange={(e) => handleChange(e.target.value)}
-      />
+      <div className="input-container">
+        <label htmlFor="dolares">Introduce el valor en USD</label>
+        <input
+          type="text"
+          name="dolares"
+          min="0"
+          inputmode="decimal"
+          onChange={(e) => handleChange(e.target.value)}
+        />
+      </div>
       {/* <h2>Precio en Bolivares Dolar today: {bolivares}</h2> */}
       <h2>Precio en Bolivares BCV: {bolivaresBCV}</h2>
       <button disabled={bolivaresBCV === 0} onClick={handleClear}>
